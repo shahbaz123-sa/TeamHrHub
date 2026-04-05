@@ -1,0 +1,36 @@
+.tiptap,
+.post-content {
+  table {
+    overflow: hidden;
+    border-collapse: collapse;
+    inline-size: 90%;
+    table-layout: fixed;
+
+    th,
+    td {
+      position: relative;
+      box-sizing: border-box;
+      border: 1px solid rgba(61, 37, 20, 12%);
+      min-inline-size: 1em;
+      padding-block: 6px;
+      padding-inline: 8px;
+      vertical-align: middle;
+
+      > * {
+        margin-block-end: 0 !important;
+      }
+    }
+
+    th {
+      background-color: rgba(61, 37, 20, 5%);
+      font-weight: bold;
+      text-align: start;
+    }
+  }
+}
+
+.post-content {
+  table {
+    inline-size: 100%;
+  }
+}
